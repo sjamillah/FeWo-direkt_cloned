@@ -47,9 +47,16 @@ header {
 
 /* Hero Section */
 .HomePage {
-    max-width: 1440px;
+    position: relative;
+    height: 400px;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/mediaasset/929486-0_2-1dlvrbo.png?impolicy=fcrop&w=1200&h=514&p=1&q=high");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    /* max-width: 1440px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px; */
 }
 
 .Introduction {
