@@ -47,22 +47,22 @@ header {
 
 /* Hero Section */
 .HomePage {
-    position: relative;
-    height: 400px;
-    background-image: url("https://forever.travel-assets.com/flex/flexmanager/mediaasset/929486-0_2-1dlvrbo.png?impolicy=fcrop&w=1200&h=514&p=1&q=high");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-    /* max-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 20px; */
+    padding: 20px;
 }
 
 .Introduction {
     text-align: center;
     margin: 40px auto;
     max-width: 1200px;
+    position: relative;
+    height: 400px;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
 .Title {
@@ -104,6 +104,80 @@ header {
 
 .search-button:hover {
     background: #0052cc;
+}
+
+/* trips */
+.suggested-trips {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.suggested-trips h2 {
+    font-size: 24px;
+    color: #0B2545;
+    margin-bottom: 10px;
+}
+
+.suggested-trips h4 {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.trip-suggestions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.trip-suggestions .filter-box {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    aspect-ratio: 4/3;
+}
+
+.trip-suggestions .filter-box:hover {
+    transform: translateY(-5px);
+}
+
+.trip-suggestions .filter-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip-suggestions .filter-box p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: rgba(255,255,255,0.9);
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+    color: #0B2545;
+}
+
+@media (max-width: 768px) {
+    .trip-suggestions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .trip-suggestions {
+        grid-template-columns: 1fr;
+    }
+    
+    .suggested-trips {
+        padding: 20px;
+    }
 }
 
 /* Common Section Styles */
