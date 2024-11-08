@@ -113,7 +113,8 @@ header .nav-links a:hover {
     background-color: #f4f4f4;
     border-radius: 8px;
     max-width: 1200px;
-    margin: 10 auto;
+    margin: 0 auto;
+    margin-bottom: 10;
 }
 
 .trips h2 {
