@@ -1,302 +1,110 @@
-/* General Reset */
-body, h1, h2, p, div, img, a, button, section, header, nav, form {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, sans-serif;
 }
 
-/* Global Styles */
 body {
     font-size: 16px;
     color: #0B2545;
     background-color: #f9f9f9;
+    line-height: 1.5;
 }
 
-/* Header */
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background-color: #ffffff;
-    color: #0B2545;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-header .logo {
+.logo {
     font-size: 24px;
     font-weight: bold;
+    color: #0066ff;
+    text-decoration: none;
 }
 
-header .nav-links a {
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
     color: #0B2545;
     text-decoration: none;
-    margin: 0 15px;
     font-size: 14px;
+    transition: color 0.3s;
 }
 
-header .nav-links a:hover {
-    text-decoration: underline;
-    color: #0B2545;
+.nav-links a:hover {
+    color: #0066ff;
 }
 
-/* Hero Image */
-.HeroImage {
-    height: 400px;
-    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2022/08/02/2022-06-05_Vrbo_APFT2_Barcelona_Therin_House_2_4605_2.png?impolicy=fcrop&w=1920&h=580&q=medium");
-    background-size: cover;
-    background-position: center;
+/* Hero Section */
+.HomePage {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Introduction */
 .Introduction {
-    padding: 40px;
     text-align: center;
+    margin: 40px auto;
+    max-width: 1200px;
 }
 
-.Introduction .Title {
+.Title {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #0B2545;
 }
 
 /* Search Form */
 .Search-Form {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.Search-Form form {
-    display: flex;
-    align-items: center;
     gap: 15px;
-}
-
-.Search-Form label {
-    font-size: 14px;
-    margin-right: 8px;
-}
-
-.Search-Form button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.Search-Form button#submit {
-    background-color: #0078d4;
-    color: white;
-}
-
-/* General styling for the trips section */
-.trips {
-    padding: 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-radius: 8px;
-}
-
-.trips h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.trips p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-/* Styling for the trips container */
-.trips {
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.trips h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.trips h4 {
-    font-size: 10px;
-    font-weight: 100;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.trips p {
-    font-size: 16px;
-    color: #ffffff;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-/* Container for individual trip cards */
-.trips .o {
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    height: 150px;
-    margin: 10px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.trips .o img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Styling for text overlay */
-.trips .move {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 8px;
-    text-align: center;
-    font-size: 16px;
-}
-
-
-/* Accommodation Section */
-.AccomodationSection {
-    padding: 40px;
-    background-color: white;
-}
-
-.AccomodationSection h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.vertical-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.vertical-list > div {
-    width: calc(33.333% - 20px);
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.vertical-list img {
-    width: 100%;
-    height: auto;
-}
-
-.vertical-list .down {
-    padding: 10px;
-    background-color: #f4f4f4;
-}
-
-/* Weekend Trips */
-.weekendtrips .trips {
-    padding: 40px;
-    display: flex;
-    gap: 20px;
-}
-
-.weekendtrips .background img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.weekendtrips .information {
-    margin-top: 20px;
-}
-
-.weekendtrips .info {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.weekendtrips .acco {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.weekendtrips .acco img {
-    width: 150px;
-    height: auto;
-}
-
-.weekendtrips .sides {
-    padding: 10px;
-    flex-grow: 1;
-}
-
-.weekendtrips .rating {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.weekendtrips .price {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.weekendtrips .allocation {
-    font-size: 14px;
-    color: #666;
-}
-
-/* holiday accomodation and others*/
-.container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-}
-
-.featured-cards {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.featured-card {
-    flex: 1;
-    border-radius: 12px;
-    overflow: hidden;
+    background: white;
+    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.featured-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.Search-Form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-.featured-text {
-    padding: 15px;
+.search-button {
+    padding: 12px 25px;
+    background: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
 }
 
-.featured-title {
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: #333;
+.search-button:hover {
+    background: #0052cc;
 }
 
-.section-title {
+/* Common Section Styles */
+.section-title, 
+.intro {
     font-size: 24px;
-    margin: 30px 0;
-    color: #1e2b4d;
+    margin: 30px 0 20px;
+    color: #0B2545;
 }
 
 .date-range {
@@ -305,78 +113,175 @@ header .nav-links a:hover {
     margin-bottom: 20px;
 }
 
+/* Filter Boxes - Used across multiple sections */
+.filter-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filter-box {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    aspect-ratio: 4/3;
+}
+
+.filter-box:hover {
+    transform: translateY(-5px);
+}
+
+.filter-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filter-box p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: rgba(255,255,255,0.9);
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+    color: #0B2545;
+}
+
+/* Featured Cards */
+.featured-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.featured-text {
+    padding: 20px;
+}
+
+.featured-text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0B2545;
+}
+
+/* Property Grid */
 .property-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    margin-bottom: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .property-card {
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: white;
 }
 
-.property-image {
+.property-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
 .property-info {
-    padding: 15px;
-}
-
-.property-name {
-    font-size: 16px;
-    margin-bottom: 8px;
-}
-
-.property-location {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 8px;
-}
-
-.property-price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #1e2b4d;
-}
-
-.price-details {
-    color: #666;
-    font-size: 12px;
+    padding: 20px;
 }
 
 .rating {
-    background-color: #34a853;
+    background: #34a853;
     color: white;
-    padding: 4px 8px;
+    padding: 5px 10px;
     border-radius: 4px;
     font-size: 14px;
     display: inline-block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-.filter-boxes {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 30px;
+.property-info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #0B2545;
 }
 
-.filter-box {
-    flex: 1;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    text-align: center;
-    cursor: pointer;
+.property-info p {
+    color: #666;
+    margin-bottom: 5px;
 }
 
-.filter-box img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 8px;
+.property-info p:last-child {
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .filter-boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .featured-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .Search-Form {
+        flex-direction: column;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-boxes {
+        grid-template-columns: 1fr;
+    }
+    
+    .Title {
+        font-size: 24px;
+    }
+    
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
 }
