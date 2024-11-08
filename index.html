@@ -18,31 +18,17 @@
         <a href="#">Register</a>
       </nav>
     </header>
-    <div class="HomePage">
+    <main class="HomePage">
       <div class="HeroImage"></div>
       <div class="Introduction">
         <h1 class="Title">Everything is fine, you book with FeWo-direkt</h1>
-        <section class="Search-Form">
-          <form action="/search" method="GET">
-            <div class="searchlocation">
-              <button type="locationbutton"></button>
-              <label>Wo soll's hingehen?</label>
-            </div>
-            <div class="date">
-              <label>Daten</label>
-              <button type="calendar">16. Nov. -30. Nov.</button>
-            </div>
-            <div class="guests">
-              <label>Gaste</label>
-              <button type="person">2 Reisende</button>
-            </div>
-            <div class="submit">
-              <button id="submit">Suchen</button>
-            </div>
-          </form>
-        </section>
+        <div class="Search-Form">
+          <input type="text" class="location" placeholder="Wo soll's hingehen?">
+          <input type="text" class="date-input" placeholder="16. Nov. - 30. Nov.">
+          <input type="text" class="guests-input" placeholder="2 Reisende">
+          <button class="search-button">Suchen</button>
+        </div>
       </div>
-    </div>
 
     <div class="trips">
         <h2>You might like these trips</h2>
@@ -776,5 +762,55 @@
         </div>
       </section>
     </div>
+
+    <div class="featured-cards">
+        <div class="featured-card">
+            <img src="" alt="Sunny Accommodations" class="featured-image">
+            <div class="featured-text">
+                <h3 class="featured-title">SUNNY ACCOMMODATIONS BY THE WATER</h3>
+                <p>Enjoy sunny days by the water with your clique</p>
+            </div>
+        </div>
+        <div class="featured-card">
+            <img src="" alt="Travel Trends" class="featured-image">
+            <div class="featured-text">
+                <h3 class="featured-title">THE TRAVEL TRENDS FOR 2025</h3>
+                <p>The hottest travel destinations and accommodations for 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Find your holiday accommodation with pool in a sunny holiday destination</h2>
+    <p class="date-range">Offers for the period: 7 Jan-30 Jan.</p>
+
+    <div class="property-grid">
+        <div class="property-card">
+            <img src="" alt="Large Home" class="property-image">
+            <div class="property-info">
+                <div class="rating">4.8 Unusual (102 reviews)</div>
+                <h3 class="property-name">7 Bedroom Large Renovated Home with Lazy River</h3>
+                <p class="property-location">Scottsdale, Arizona</p>
+                <p class="property-price">6,428 €</p>
+                <p class="price-details">for 3 nights • 2,142 € per night</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-boxes">
+        <div class="filter-box">
+            <img src="" alt="Beach">
+            <p>Near the beach</p>
+        </div>
+        <div class="filter-box">
+            <img src="" alt="Pets">
+            <p>Pets welcome</p>
+        </div>
+        <div class="filter-box">
+            <img src="" alt="Pool">
+            <p>Pools</p>
+        </div>
+    </div>
+    </div>
+    </main>
   </body>
 </html>
