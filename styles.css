@@ -3,7 +3,7 @@ body, h1, h2, p, div, img, a, button, section, header, nav, form {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
 /* Global Styles */
