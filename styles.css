@@ -9,7 +9,7 @@ body, h1, h2, p, div, img, a, button, section, header, nav, form {
 /* Global Styles */
 body {
     font-size: 16px;
-    color: #333;
+    color: #0B2545;
     background-color: #f9f9f9;
 }
 
@@ -37,6 +37,7 @@ header .nav-links a {
 
 header .nav-links a:hover {
     text-decoration: underline;
+    color: #0B2545;
 }
 
 /* Hero Image */
